@@ -125,7 +125,7 @@ function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: 
         </div>
 
         <div className="mt-5 flex items-center justify-center gap-6 text-muted-foreground">
-          <a href="https://youtube.com/" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
+          <a href="https://www.youtube.com/@Tanish_Mannz" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
             <Youtube className="h-6 w-6" />
           </a>
           <a href={`https://discord.com/users/${DISCORD_ID}`} target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors">
