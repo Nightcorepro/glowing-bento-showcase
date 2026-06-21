@@ -68,7 +68,7 @@ function Portfolio() {
           </div>
         </div>
         <p className="text-center text-xs text-muted-foreground mt-6">
-          © {new Date().getFullYear()} Nightcorepro
+          © {new Date().getFullYear()} Tanish_Mannz
         </p>
       </div>
     </div>
@@ -77,7 +77,7 @@ function Portfolio() {
 
 /* ---------- HERO ---------- */
 function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: string | null }) {
-  const name = "Nightcorepro";
+  const name = "Tanish_Mannz";
   return (
     <div className="relative">
       <div className="relative aspect-[5/2] w-full overflow-hidden rounded-t-[inherit]">
@@ -112,11 +112,11 @@ function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: 
           <AnimatedText text={name} />
         </h1>
         <p className="mt-2 text-muted-foreground text-sm sm:text-base">
-          Game Developer, UI Designer and Software Engineer.
+          Arduino Expert, Topper, Gamer.
         </p>
         <p className="mt-2 text-xs sm:text-sm text-muted-foreground">
-          97 Subscribers <span className="mx-2 opacity-50">•</span> 9 projects{" "}
-          <span className="mx-2 opacity-50">•</span> 5k members
+          7 Subscribers <span className="mx-2 opacity-50">•</span> 7 projects{" "}
+          <span className="mx-2 opacity-50">•</span> 0 members
         </p>
 
         <div className="mt-6 space-y-3">
@@ -241,8 +241,8 @@ function WeatherCard() {
         <span className="text-sm text-muted-foreground">Lahore</span>
         <Cloud className="h-5 w-5 text-muted-foreground" />
       </div>
-      <div className="mt-3 text-4xl font-bold">29°C</div>
-      <div className="text-sm text-muted-foreground">Clear</div>
+      <div className="mt-3 text-4xl font-bold">18°C</div>
+      <div className="text-sm text-muted-foreground">Rainy</div>
       <div className="mt-4 flex items-center gap-3 text-xs text-muted-foreground">
         <span className="inline-flex items-center gap-1">
           <Droplets className="h-3.5 w-3.5" /> 52%
@@ -365,7 +365,7 @@ function MusicCard({ lanyard }: { lanyard: ReturnType<typeof useLanyard> }) {
 
 /* ---------- PROJECTS ---------- */
 const WEB_PROJECTS = [
-  { name: "Profile (Old)", url: "" },
+  { name: "Profile (Old)", url: "https://mannz-lovat.vercel.app/" },
   { name: "Profile (New)", url: "https://tanishprofile.lovable.app" },
 ];
 
@@ -509,8 +509,8 @@ function ContactTab() {
         <ContactRow
           icon={<Mail className="h-6 w-6" />}
           label="Email"
-          value="Nightcoreproyt@gmail.com"
-          onCopy={() => copy("e", "Nightcoreproyt@gmail.com")}
+          value="tanishxmannz@gmail.com"
+          onCopy={() => copy("e", "tanishxmannz@gmail.com")}
           copied={copied === "e"}
         />
       </div>
@@ -562,9 +562,9 @@ function ContactRow({
 
 /* ---------- ABOUT ---------- */
 const SKILLS = [
-  "TypeScript", "Rust", "Java", "Python",
+  "Arduino", "Java", "Python",
   "Node.js", "AI Engineering", "Telegram Bots",
-  "Minecraft Plugins", "VS Code", "Linux",
+  "Minecraft Plugins", "VS Code", "Android",
 ];
 
 function AboutTab() {
@@ -572,8 +572,7 @@ function AboutTab() {
     <div className="text-center">
       <h2 className="text-2xl font-bold">About Me</h2>
       <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-        I'm Nightcorepro — a game developer, UI designer and software engineer. I build games,
-        clean interfaces, Discord bots and tinker with AI on the side.
+        I'm Tanish_Mannz — a Arduino Expert, Topper, Gamer. I build projects with AI.
       </p>
 
       <h3 className="mt-8 text-lg font-bold">Skills & Tools</h3>
