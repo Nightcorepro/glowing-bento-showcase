@@ -115,12 +115,12 @@ function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: 
           Arduino Expert, Topper, Gamer.
         </p>
         <p className="mt-2 text-xs sm:text-sm text-muted-foreground">
-          7 Subscribers <span className="mx-2 opacity-50">•</span> 7 projects{" "}
+          20 Subscribers <span className="mx-2 opacity-50">•</span> 7 projects{" "}
           <span className="mx-2 opacity-50">•</span> 0 members
         </p>
 
         <div className="mt-6 space-y-3">
-          <PillButton href="https://discord.gg/" label="Join Discord" />
+          <PillButton href="https://discord.gg/users/1128588867302338581" label="Join Discord" />
           <PillButton href="https://github.com/" label="GitHub" />
         </div>
 
