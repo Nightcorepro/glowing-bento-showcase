@@ -36,13 +36,17 @@ function Portfolio() {
   const avatarUrl = lanyard?.discord_user.avatar
     ? `https://cdn.discordapp.com/avatars/${lanyard.discord_user.id}/${lanyard.discord_user.avatar}.${lanyard.discord_user.avatar.startsWith("a_") ? "gif" : "png"}?size=256`
     : `https://cdn.discordapp.com/embed/avatars/0.png`;
+  const decorationAsset = lanyard?.discord_user.avatar_decoration_data?.asset;
+  const decorationUrl = decorationAsset
+    ? `https://cdn.discordapp.com/avatar-decoration-presets/${decorationAsset}.png?size=256&passthrough=true`
+    : null;
 
   return (
     <div className="min-h-screen w-full bg-background text-foreground">
       <div className="fixed inset-0 grid-bg pointer-events-none opacity-60" />
       <div className="relative mx-auto w-full max-w-xl px-4 py-6 sm:py-10">
         <div className="card-soft overflow-hidden">
-          <Hero avatarUrl={avatarUrl} />
+          <Hero avatarUrl={avatarUrl} decorationUrl={decorationUrl} />
           <div className="px-5 sm:px-7 pb-8">
             <Tabs tab={tab} setTab={setTab} />
             <div className="mt-6">
@@ -72,7 +76,7 @@ function Portfolio() {
 }
 
 /* ---------- HERO ---------- */
-function Hero({ avatarUrl }: { avatarUrl: string }) {
+function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: string | null }) {
   const name = "Nightcorepro";
   return (
     <div className="relative">
@@ -86,15 +90,20 @@ function Hero({ avatarUrl }: { avatarUrl: string }) {
       </div>
 
       <div className="flex justify-center -mt-14 sm:-mt-16">
-        <div className="relative">
-          <div className="absolute -inset-1 rounded-full neon-ring opacity-90 blur-[2px]" />
-          <div className="relative rounded-full p-[3px] bg-card">
+        <div className="relative h-28 w-28 sm:h-32 sm:w-32">
+          <img
+            src={avatarUrl}
+            alt={`${name} avatar`}
+            className="h-full w-full rounded-full object-cover"
+          />
+          {decorationUrl && (
             <img
-              src={avatarUrl}
-              alt={`${name} avatar`}
-              className="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+              src={decorationUrl}
+              alt=""
+              aria-hidden
+              className="pointer-events-none absolute inset-0 h-full w-full scale-[1.18] object-contain"
             />
-          </div>
+          )}
         </div>
       </div>
 

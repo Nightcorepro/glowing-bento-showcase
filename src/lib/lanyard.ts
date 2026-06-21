@@ -32,6 +32,10 @@ export interface LanyardData {
     username: string;
     avatar: string | null;
     global_name?: string;
+    avatar_decoration_data?: {
+      asset: string;
+      sku_id?: string;
+    } | null;
   };
   discord_status: "online" | "idle" | "dnd" | "offline";
   activities: LanyardActivity[];
