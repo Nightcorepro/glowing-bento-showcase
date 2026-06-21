@@ -36,6 +36,10 @@ function Portfolio() {
   const avatarUrl = lanyard?.discord_user.avatar
     ? `https://cdn.discordapp.com/avatars/${lanyard.discord_user.id}/${lanyard.discord_user.avatar}.${lanyard.discord_user.avatar.startsWith("a_") ? "gif" : "png"}?size=256`
     : `https://cdn.discordapp.com/embed/avatars/0.png`;
+  const decorationAsset = lanyard?.discord_user.avatar_decoration_data?.asset;
+  const decorationUrl = decorationAsset
+    ? `https://cdn.discordapp.com/avatar-decoration-presets/${decorationAsset}.png?size=256&passthrough=true`
+    : null;
 
   return (
     <div className="min-h-screen w-full bg-background text-foreground">
