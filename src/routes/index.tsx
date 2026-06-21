@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
   component: Portfolio,
 });
 
-const DISCORD_ID = "1113463634409041951";
+const DISCORD_ID = "1128588867302338581";
 const BANNER_URL = "https://cdn.pfps.gg/banners/8401-white-tree.gif";
 
 const TABS = ["Home", "Projects", "Contact", "About"] as const;
