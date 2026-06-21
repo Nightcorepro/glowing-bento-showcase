@@ -365,19 +365,17 @@ function MusicCard({ lanyard }: { lanyard: ReturnType<typeof useLanyard> }) {
 
 /* ---------- PROJECTS ---------- */
 const WEB_PROJECTS = [
-  { name: "Evadex", url: "https://evadexnight.vercel.app" },
-  { name: "Inamusic", url: "https://inamusic.in/" },
-  { name: "Strelix v2", url: "https://strelixv2.vercel.app/" },
-  { name: "Nightcorepro.dev", url: "https://nightcorepro.dev/" },
+  { name: "Profile (Old)", url: "" },
+  { name: "Profile (New)", url: "https://tanishprofile.lovable.app" },
 ];
 
 const DESIGN_PROJECTS = [
   {
-    name: "CV2 Music Nothing Bot",
+    name: "Arduino Car",
     image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
   },
   {
-    name: "Halix Cloud",
+    name: "Arduino Dustbin",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",
   },
 ];
@@ -504,8 +502,8 @@ function ContactTab() {
         <ContactRow
           icon={<DiscordIcon className="h-6 w-6" />}
           label="Discord"
-          value="nightcorepro"
-          onCopy={() => copy("d", "nightcorepro")}
+          value="darkdemon1235"
+          onCopy={() => copy("d", "darkdemon1235")}
           copied={copied === "d"}
         />
         <ContactRow
