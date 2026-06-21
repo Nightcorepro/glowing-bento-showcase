@@ -76,7 +76,7 @@ function Portfolio() {
 }
 
 /* ---------- HERO ---------- */
-function Hero({ avatarUrl }: { avatarUrl: string }) {
+function Hero({ avatarUrl, decorationUrl }: { avatarUrl: string; decorationUrl: string | null }) {
   const name = "Nightcorepro";
   return (
     <div className="relative">
@@ -90,15 +90,20 @@ function Hero({ avatarUrl }: { avatarUrl: string }) {
       </div>
 
       <div className="flex justify-center -mt-14 sm:-mt-16">
-        <div className="relative">
-          <div className="absolute -inset-1 rounded-full neon-ring opacity-90 blur-[2px]" />
-          <div className="relative rounded-full p-[3px] bg-card">
+        <div className="relative h-28 w-28 sm:h-32 sm:w-32">
+          <img
+            src={avatarUrl}
+            alt={`${name} avatar`}
+            className="h-full w-full rounded-full object-cover"
+          />
+          {decorationUrl && (
             <img
-              src={avatarUrl}
-              alt={`${name} avatar`}
-              className="h-28 w-28 sm:h-32 sm:w-32 rounded-full object-cover"
+              src={decorationUrl}
+              alt=""
+              aria-hidden
+              className="pointer-events-none absolute inset-0 h-full w-full scale-[1.18] object-contain"
             />
-          </div>
+          )}
         </div>
       </div>
 
