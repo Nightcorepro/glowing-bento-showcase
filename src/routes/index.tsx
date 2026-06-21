@@ -46,7 +46,7 @@ function Portfolio() {
       <div className="fixed inset-0 grid-bg pointer-events-none opacity-60" />
       <div className="relative mx-auto w-full max-w-xl px-4 py-6 sm:py-10">
         <div className="card-soft overflow-hidden">
-          <Hero avatarUrl={avatarUrl} />
+          <Hero avatarUrl={avatarUrl} decorationUrl={decorationUrl} />
           <div className="px-5 sm:px-7 pb-8">
             <Tabs tab={tab} setTab={setTab} />
             <div className="mt-6">
